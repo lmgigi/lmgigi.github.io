@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello</title>
+    <title>咖啡廳購物車</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,700;1,600&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <p>Hello</p>
+    <!-- partial:index.partial.html -->
+    <div id="menu">
+      <h2>GIGI CAFE MENU ʕ·ᴥ·ʔ</h2>
+      <div class="shapes">
+        <div class="semicircle"></div>
+        <div class="semicircle"></div>
+        <div class="semicircle"></div>
+      </div>
+      <div class="section">
+        <div class="menu_page">
+          <h4 id="menu_button1">COFFEE</h4>
+          <h4 id="menu_button2">AND MORE</h4>
+          <div class="pages">
+            <div class="page page1">
+              <ul id="item_list"></ul>
+            </div>
+            <div class="page page2">
+              <ul id="item_list_2"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="shopcart">
+          <h4>BUY LIST</h4>
+          <ul class="cart" id="item_list">
+            <li>treat yourself to something nice!</li>
+            <br />
+            <li>OPENING HOURS:</li>
+            <li>weekdays 10am-5pm</li>
+            <li>weekends 10am-7pm</li>
+          </ul>
+          <h4 id="check_button">結帳</h4>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
